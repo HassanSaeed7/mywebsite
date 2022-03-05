@@ -553,7 +553,7 @@ footer h2 {
     text-align: left;
   }
   .inner-tile {
-    width: 60%;
+    width: 50%;
     margin: auto;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
