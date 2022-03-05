@@ -1,9 +1,14 @@
 import './css/style.css'
-const targets = document.querySelectorAll('[data-src]');
-const sections = document.querySelectorAll('.container');
 const body = document.body;
 let lastScroll = 0;
+const targets = document.querySelectorAll('[data-src]');
+const sections = document.querySelectorAll('.container');
+const hamburgerBtn = document.querySelector('.hamburger');
+const nav = document.querySelector('.mobile-nav')
+const hamburgerLinks = document.querySelectorAll('.hamburger-navlinks')
 
+
+//lazy loading images
 const lazyLoading = target => {
     const newObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
@@ -21,6 +26,8 @@ const lazyLoading = target => {
 targets.forEach(lazyLoading);
 
 
+
+//On large screens, hides the navbar when scrolling down, shows it when scrolling up
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
 
@@ -54,8 +61,18 @@ window.addEventListener('scroll', () => {
 	});
 })
     
+//toggles the hamburger menu when you click it
+hamburgerBtn.addEventListener('click', () => {
+    hamburgerBtn.classList.toggle('is-active');
+    nav.classList.toggle('is-active')
+})
 
 
 
-
+//closes the hamburger navbar whenever a link is clicked
+hamburgerLinks.forEach(item => item.addEventListener('click', () => {
+    hamburgerBtn.classList.remove('is-active');
+    nav.classList.remove('is-active');
+    
+}))
 

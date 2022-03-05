@@ -11,7 +11,7 @@
     <script defer src="https://kit.fontawesome.com/defadb8f1e.js" crossorigin="anonymous"></script>
     <script defer src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
     <script defer type="module" src="/main.js"></script>
-    <title>Hassan Saeed - Portfolio</title>
+    <title>Hassan Saeed - Web Developer</title>
   </head>
 
   <body data-scroll-container>
@@ -25,7 +25,26 @@
         <a class="navLinks" href="#gallery">Design Mockups</a>
         <a class="navLinks hire" href="#contact">Hire Me</a>
       </nav>
+      
+      
     </header>
+    <div class="mobile-header">
+    <button id="hamburger" class="hamburger">
+      <div class="bar"></div>
+    </button>
+       <nav id="mobile-nav" class="mobile-nav">
+      <img data-src="/fav.png" >
+      <a href="#hero" class="hamburger-navlinks">Home</a>
+      <a href="#about" class="hamburger-navlinks">About Me</a>
+      <a href="#project" class="hamburger-navlinks">Projects</a>
+      <a href="#gallery" class="hamburger-navlinks">Design Mockups</a>
+      <a href="#contact" class="hamburger-navlinks hire" >Hire Me</a>
+      
+    </nav>
+    </div>
+    
+
+    <main>
     <div class="hero container" id="hero" data-scroll-section>
       
       <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_ruzoywer.json" class="player" background="transparent"  speed="1"  style="width: 375px; height: 375px;" loop autoplay></lottie-player> 
@@ -79,7 +98,7 @@
       <i class="fab fa-css3-alt fa-5x"></i>
       <i class="fab fa-js-square fa-5x"></i>
       <i class="fab fa-react fa-5x"></i>
-      <span class="iconify" data-icon="cib:next-js" data-width="100"></span>
+      <span class="iconify" data-icon="cib:next-js" data-width="80"></span>
       <i class="fab fa-git-alt fa-5x"></i>
       <span class="iconify" data-icon="la:node" style="color: #68a063; font-size: 100px;"></span>
       <span class="iconify" data-icon="logos:express" data-width="100" data-height="100"></span>
@@ -183,7 +202,7 @@
       <img class="gallery-img" data-src="/7.webp">
       <img class="gallery-img" data-src="/g6.webp">
       <img class="gallery-img" data-src="/9.webp">
-      <img class="gallery-img" data-src="/glassic.webp">
+      <img class="gallery-img" data-src="/glass.webp">
       <img class="gallery-img" data-src="/22.webp">
       <img class="gallery-img" data-src="/10.webp">
       <img class="gallery-img" data-src="/12.webp">
@@ -195,7 +214,7 @@
     </div>
 </div>
 
-
+    </main>
 <div class="show-footer">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
     <path fill="#3397FD" fill-opacity="1" d="M0,192L60,202.7C120,213,240,235,360,256C480,277,600,299,720,272C840,245,960,171,1080,154.7C1200,139,1320,181,1380,202.7L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
