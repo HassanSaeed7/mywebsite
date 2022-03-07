@@ -103,20 +103,10 @@ header {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#3397FD), to(#84BEF2));
   background-image: linear-gradient(to bottom, #3397FD, #84BEF2);
   text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
 }
 
 .hero h1 {
-  font-size: clamp(2rem, 5vw, 7rem);
+  font-size: clamp(1.5rem, 4.5vw, 7rem);
 }
 
 .hero div {
@@ -126,10 +116,11 @@ header {
 
 .hero div h2 {
   font-weight: 100;
-  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
   font-family: 'Montserrat', sans-serif;
   margin: 0 auto 5%;
   text-align: left;
+  line-height: 1.7;
 }
 
 .hero div button {
@@ -140,6 +131,7 @@ header {
   color: white;
   font-size: 1.25rem;
   font-weight: bold;
+  margin-top: 5%;
 }
 
 .about {
@@ -171,7 +163,7 @@ header {
   margin: 7.5% auto;
 }
 
-.about article h6 {
+.about article h4 {
   font-size: clamp(1.25rem, 3.5vw, 2.25rem);
   text-align: right;
 }
@@ -198,20 +190,24 @@ header {
   margin: auto;
 }
 
+.sc-icon {
+  opacity: 1;
+}
+
 .project-tile {
   width: 80%;
   margin: 5% auto;
 }
 
 .project-tile h3 {
-  font-size: clamp(2rem, 3vw, 3rem);
+  font-size: clamp(1.5rem, 3vw, 3rem);
   text-align: right;
   font-weight: 400;
-  margin: 0 0 0 2.5%;
+  margin-left: 2.5%;
 }
 
 .inner-tile {
-  min-height: 95vh;
+  min-height: 85vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,7 +218,7 @@ header {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  font-size: clamp(1.2rem, 1.5rem, 1.5rem);
+  font-size: clamp(1.25rem, 1.5rem, 1.5rem);
 }
 
 .inner-tile img {
@@ -233,7 +229,7 @@ header {
 }
 
 .inner-tile p {
-  margin: 5% auto;
+  margin: 2.5% auto 0;
   line-height: 1.7;
   text-align: left;
   font-size: clamp(1rem, 1.25vw, 1.35rem);
@@ -242,10 +238,11 @@ header {
 }
 
 .inner-tile a {
-  margin: 5% auto;
+  margin: 2.5% auto;
   background: -webkit-gradient(linear, left top, right top, from(#e61a5f), to(#ca247c));
   background: linear-gradient(to right, #e61a5f, #ca247c);
-  padding: 1em 2em;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  padding: 0.5em 1em;
   font-family: 'Montserrat', sans-serif;
   color: white;
   font-weight: bold;
@@ -362,52 +359,8 @@ footer h2 {
   font-weight: bold;
 }
 
-.fa-html5 {
-  color: #F06529;
-}
-
-.fa-css3-alt {
-  color: #2965f1;
-}
-
-.fa-js-square {
-  color: #F0DB4F;
-  position: relative;
-}
-
-.fa-js-square::after {
-  content: '';
-  height: 50px;
-  width: 65px;
-  background: black;
-  position: absolute;
-  bottom: 10%;
-  left: 2%;
-  z-index: -1;
-}
-
-.sc-icon {
-  opacity: 1;
-}
-
-.fa-sass {
-  color: #cc6699;
-}
-
-.fa-bootstrap {
-  color: #602C50;
-}
-
-.fa-react {
-  color: #61DBFB;
-}
-
 .fa-wordpress {
   color: #00749C;
-}
-
-.fa-git-alt {
-  color: #f34f29;
 }
 
 .icon-hover {
@@ -509,8 +462,9 @@ footer h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -518,7 +472,7 @@ footer h2 {
   }
   header nav {
     font-size: 1.5rem;
-    width: 75%;
+    width: 70%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -530,7 +484,7 @@ footer h2 {
             align-items: center;
   }
   header .nav-logo {
-    margin-left: 5%;
+    margin-left: 1%;
   }
   .active {
     border-bottom: 5px solid red;
@@ -692,10 +646,13 @@ footer h2 {
        object-fit: cover;
   }
   .icon-hover a span, .icon-hover a p {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    zoom: 300%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-margin-before: 0em;
             margin-block-start: 0em;
     -webkit-margin-after: 0em;
@@ -763,6 +720,12 @@ footer h2 {
 }
 
 @media screen and (min-width: 1150px) {
+  header nav {
+    width: 40%;
+  }
+  header .nav-logo {
+    margin-left: 5%;
+  }
   .gallery {
     -ms-grid-columns: (minmax(450px, 1fr))[auto-fill];
         grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
