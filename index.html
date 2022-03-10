@@ -7,7 +7,7 @@
     <link rel="icon" type="image/svg+xml" href="/fav.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;900&family=Poppins:wght@100;200;300;600;700&display=swap" rel="stylesheet">
     <script defer src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script defer src="https://kit.fontawesome.com/defadb8f1e.js" crossorigin="anonymous"></script>
     <script defer src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
@@ -36,7 +36,7 @@
        <nav id="mobile-nav" class="mobile-nav">
       <img data-src="/fav.png" alt="My logo" >
       <a href="#hero" class="hamburger-navlinks">Home</a>
-      <a href="#about" class="hamburger-navlinks">About Me</a>
+      <a href="#about" class="hamburger-navlinks">About</a>
       <a href="#project" class="hamburger-navlinks">Projects</a>
       <a href="#gallery" class="hamburger-navlinks">Design Mockups</a>
       <a href="#contact" class="hamburger-navlinks hire" >Hire Me</a>
@@ -58,7 +58,7 @@
         </div>  
         
     </div>
-  <div class="show">
+  <div class="show" >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path fill="#84BEF2" fill-opacity="1" d="M0,128L48,117.3C96,107,192,85,288,90.7C384,96,480,128,576,154.7C672,181,768,203,864,192C960,181,1056,139,1152,122.7C1248,107,1344,117,1392,122.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
         </svg>
@@ -72,22 +72,22 @@
 
 <div class="about container" id="about" data-scroll-section>
       
-      <h2 class="section-title">About Me</h2>
+      <h2 class="section-title">About</h2>
 
       <div class="about-inner">
 
         <article>
-          <h4>I am a developer.</h4>
-          <p>I develop modern web pages and applications with JavaScript frameworks and build tools such as React and Vite.</p>
+          <p class="about-subheaders">I am a developer.</p>
+          <p class="about-text">I develop modern web pages and applications with HTML, CSS, and JavaScript. I use frameworks and build tools such as React, NextJS, and Vite to streamline the development process.</p>
           <div>
             
           </div>
 
-          <h4>I am a designer.</h4> 
-          <p>I enjoy designing beautiful UX/UI for web pages and applications. I can spend hours centering a div, I love it.</p>
+          <p class="about-subheaders">I am a designer.</p> 
+          <p class="about-text">I enjoy designing beautiful UX/UI for web pages and applications. I can spend hours centering a div, I love it.</p>
           
-          <h4>I am a wordpress developer.</h4>
-          <p>Wordpress sites can be a great option for small businesses or independent creators
+          <p class="about-subheaders">I am a wordpress developer.</p>
+          <p class="about-text">Wordpress sites can be a great option for small businesses or independent creators
             who are looking to garner a virtual presence.
           </p>
        
@@ -98,11 +98,12 @@
           <span class="iconify" data-icon="bxl:html5" style="color: #f06529;" data-width="100" data-height="100"></span>
           <span class="iconify" data-icon="bxl:css3" style="color: #2965f1;" data-width="100" data-height="100"></span>
           <span class="iconify" data-icon="logos:javascript" style="color: #f06529;" data-width="80" data-height="80"></span>
+          <span class="iconify" data-icon="logos:typescript-icon" data-width="80"></span>
           <span class="iconify" data-icon="logos:react" data-width="80" data-height="80"></span>
           <span class="iconify" data-icon="cib:next-js" data-width="80"></span>
           <span class="iconify" data-icon="bi:git" style="color: #f34f29;" data-width="80" data-height="80"></span>
           <span class="iconify" data-icon="logos:nodejs" style="color: #00749c;" data-width="80" data-height="80"></span>
-          <span class="iconify" data-icon="logos:express" data-width="80" data-height="80"></span>
+          <!-- <span class="iconify" data-icon="logos:express" data-width="80" data-height="80"></span> -->
           <span class="iconify" data-icon="logos:mongodb" data-width="100" data-height="100"></span>
           <span class="iconify" data-icon="vscode-icons:file-type-vite"  data-width="80" data-height="80"></span>
           <span class="iconify" data-icon="logos:sass" data-width="80" data-height="80"></span>
@@ -125,8 +126,10 @@
         <h3>Film Forager</h3>
         <div class="inner-tile">
         <img data-src="/ff.webp" alt="project image for film forager">
+        <div class="tile-info">
         <p>A film app that contains many features! From popular and trending films to a popular star, you can search for movie details afar! The web app was created with React and the data is provided by the Movie Database API.</p>
         <a href="https://film-forager.vercel.app/" target="_blank">Live Demo</a>
+      </div>
       </div>
       </div>
 
@@ -134,32 +137,40 @@
         <h3>This or That? Game</h3>
         <div class="inner-tile">
         <img data-src="/totfig.webp" alt="project image for this or that">
+        <div class="tile-info">
         <p>This or That is a simple A or B selection game in which players get to choose between two thematically-related alternatives. I wanted to turn a popular movie list into an interactive experience and this is the result. Check it out, maybe you'll find a cool movie to watch this weekend!</p>
         <a href="https://hassansaeed7.github.io/OldNew/" target="_blank">Live Demo</a>
+      </div>
       </div>
     </div>
       <div class="project-tile">
         <h3>E-Commerce Store</h3>
         <div class="inner-tile">
         <img  data-src="/ecom.webp" alt="project image for e-commerce store">
+        <div class="tile-info">
         <p>A fully functional e-commerce shop experience created for a gym equipment company. The shop was created using the MERN stack and styled with React Bootstrap. This shop application is fully capable of operating your online store today!</p>
         <a href="/" target="_blank">Live Demo</a>
+      </div>
       </div>
 </div>
       <div class="project-tile">
         <h3>Wake Band Page</h3>
         <div class="inner-tile">
         <img  data-src="/WAKE2.webp" alt="project image for the band page">
+        <div class="tile-info">
         <p>Here, I was asked to create a tribute page for my friends' band. I used the Swiper.JS library for the slideshow functionality. Check out their music if you have the time. They are great!</p>
         <a href="https://bandpage.vercel.app/" target="_blank">Live Demo</a>
+      </div>
       </div>
 </div>
       <div class="project-tile">
         <h3>Link Keeper</h3>
         <div class="inner-tile">
         <img data-src="/linkeeper.webp" alt="project image for the list extension">
+        <div class="tile-info">
         <p>A simple Chrome extension built with vanilla JavaScript. The extension utilizes local storage to save and set the inputted link or the link in the window's current tab. There is also an option to download the list as a .csv file.</p>
         <a href="/" target="_blank">In Review</a>
+      </div>
       </div>
 </div>
 
@@ -167,8 +178,10 @@
   <h3>Construction Landing Page</h3>
   <div class="inner-tile">
     <img data-src="/lp.webp" alt="project image for the landing page">
+    <div class="tile-info">
     <p>An elegant landing page for a business that was designed with SEO, accessibility, and performance in mind. The landing page was built with HTML, CSS (SASS), and JavaScript. Intersection observer is used for the scroll triggered animations.</p>
     <a href="https://hassansaeed7.github.io/hdnclanding/" target="_blank">Live Demo</a>
+  </div>
   </div>
 </div>
       
@@ -214,6 +227,7 @@
       <div>
     <h2>Get in Touch!</h2>
       </div>
+      <div>
     <div class="contact-list">
       
       <ul>
@@ -246,7 +260,7 @@
           target="_blank"
           >
         <span class="iconify" data-icon="akar-icons:file" data-width="50" data-height="50"></span>
-        Resume
+        <p>Resume</p>
         </a>
         </li>
         
@@ -266,7 +280,7 @@
         <input type="submit">
       </form>
     </div>
-  
+  </div>
   </footer>
 
 

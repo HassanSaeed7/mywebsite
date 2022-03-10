@@ -65,7 +65,7 @@ img {
 .container {
   width: 100%;
   min-height: 100vh;
-  margin-bottom: 5%;
+  margin-bottom: 20%;
   &:last-child {
     margin-bottom: 0;
   }
@@ -124,26 +124,29 @@ header {
     flex-direction: column;
     width: 70%;
     margin: 7.5% auto;
-    h4 {
-      font-size: clamp(1.25rem, 3.5vw, 2.25rem);
-      text-align: right;
-    }
+    
     p {
       line-height: 1.6;
       font-size: clamp(1.1rem, 1.5vw, 1.25rem);
-      margin-bottom: 7.5%;
+      margin-bottom: 5%;
+    }
+    .about-subheaders {
+      font-weight: 900;
+      font-size: clamp(1.5rem, 2vw, 2rem);
+      margin-block-start: 0em;
+    margin-block-end: 0em;
     }
   }
 }
 
 
-
 .icons {
+  width: 70%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   place-content: center;
   gap: 2rem;
-  padding: 5%;
+  margin: auto;
   i,
   svg,
   img {
@@ -156,33 +159,32 @@ header {
 
 //projects page
 .project-tile {  
-  width: 80%;
+  width: 70%;
+  min-height: 90vh;
   margin: 5% auto;
   h3 {
     font-size: clamp(1.5rem, 3vw, 3rem);
     text-align: right;
-    font-weight: 400;
+    font-weight: 700;
     margin-left: 2.5%;
   }
 }
 .inner-tile {
-    min-height: 85vh;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     font-size: clamp(1.25rem, 1.5rem, 1.5rem);
     img {
-    width: 95%;
+    width: 100%;
     object-fit: cover;
     margin: 0 auto;
     }
     p {
-    margin: 2.5% auto 0;
-    line-height: 1.7;
+    line-height: 2;
     text-align: left;
-    font-size: clamp(1rem, 1.25vw, 1.35rem);
+    font-size: clamp(1rem, 1.5vw, 1.35rem);
     color: rgba(0, 0, 0, 0.85);
-    font-weight: 200;
     }
     a {
     margin: 2.5% auto;
@@ -191,7 +193,7 @@ header {
     padding: 0.5em 1em;
     font-family: 'Montserrat', sans-serif;
     color: white;
-    font-weight: bold;
+    font-weight: 700;
     }
   }
 //gallery page
@@ -300,11 +302,11 @@ footer {
 
 .hamburger {
   position: fixed;
-  right: 1.5%;
-  top: 1.5%;
+  right: 2%;
+  top: 2%;
   z-index: 105;
   display: block;
-  width: 55px;
+  width: 50px;
   cursor: pointer;
   appearance: none;
   background: none;
@@ -383,6 +385,9 @@ footer {
   .active {
     border-bottom: 5px solid red;
   }
+  .container {
+    margin-bottom: 0;
+  }
   .container.hero {
     margin-bottom: 0;
   }  
@@ -429,9 +434,9 @@ footer {
       margin-top: 0;
       margin-bottom: 0;
       width: 100%;
-      p {
-        margin-right: 0;
-       
+      .about-text {
+       width: 80%;
+       margin-left: 5%;
       }
     }
   }
@@ -473,27 +478,27 @@ footer {
       box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
       width: 100%;
     }
-    p, a {
+   .tile-info {
       position: absolute;
       left: 2.5%;
       width: 30%;
-    }
-    p {
       top: 10%;
+    p {
+      
+      width: 90%;
     }
     a {
       width: fit-content;
-      top: 55%;
       background: none;
       color: black;
-      margin: 0;
       padding: 0;
-       border-bottom: 10px solid black;
-       transition: all 0.25s ease;
+      border-bottom: 8px solid black;
+      transition: all 0.35s ease;
       &:hover {
         border-bottom: 10px solid #e61a5f; 
       }
     }
+  }
   }
   .gallery {
     width: 95%;
@@ -524,40 +529,24 @@ footer {
   .icons {
     padding: 0;
     gap: 1.5rem;
-  }
-
-  .contact {
-    position: relative;
-    min-height: 70vh;
-    h2 {
-      position: absolute;
-      top: 0;
-      left: 0;
+    margin: 0;
+    width: 90%;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    i,
+    svg,
+    img {
+    margin: 0;
     }
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
   }
-  .contact-list {
-    width: 20%;
-    ul {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-      gap: 5em;
-   }
+  .contact { 
+  min-height: 70vh;
+  flex-direction: row;
   }
   .contact-form {
-  width: 50%;
   input:last-child {
     width: fit-content;
-
+    }
   }
-  }
-
-
 }
 
 @media (min-width: 768px) {
@@ -568,9 +557,7 @@ footer {
 
 @media screen and (min-width: 1150px) { 
   header {
-    nav {
-    width: 40%;
-    }
+    
     .nav-logo {
       margin-left: 5%;
     }
