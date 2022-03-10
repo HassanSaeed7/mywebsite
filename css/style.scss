@@ -163,14 +163,14 @@ header {
   min-height: 90vh;
   margin: 5% auto;
   h3 {
-    font-size: clamp(1.5rem, 3vw, 3rem);
-    text-align: right;
+    font-size: clamp(2rem, 3.5vw, 4rem);
+  
     font-weight: 700;
     margin-left: 2.5%;
+    margin-bottom: 2.5%;
   }
 }
 .inner-tile {
-    
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -185,6 +185,7 @@ header {
     text-align: left;
     font-size: clamp(1rem, 1.5vw, 1.35rem);
     color: rgba(0, 0, 0, 0.85);
+    margin: 10% auto;
     }
     a {
     margin: 2.5% auto;
@@ -373,8 +374,9 @@ footer {
     height: 5vh;
     nav {
     font-size: 1.5rem;
-    width: 70%;
+    width: 50%;
     display: flex;
+   
     justify-content: space-evenly;
     align-items: center;
     }
@@ -542,9 +544,17 @@ footer {
   min-height: 70vh;
   flex-direction: row;
   }
+  .contact-right {
+    width: 50%;
+  }
   .contact-form {
   input:last-child {
     width: fit-content;
+    }
+  }
+  .contact-list {
+    ul {
+      width: 70%;
     }
   }
 }
