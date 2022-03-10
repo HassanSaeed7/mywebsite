@@ -132,17 +132,18 @@ header {
   margin: 7.5% auto;
 }
 .about article p {
-  line-height: 1.6;
+  line-height: 1.7;
   font-size: clamp(1.1rem, 1.5vw, 1.25rem);
   margin-bottom: 5%;
 }
 .about article .about-subheaders {
-  font-weight: 900;
+  font-weight: 700;
   font-size: clamp(1.5rem, 2vw, 2rem);
   -webkit-margin-before: 0em;
           margin-block-start: 0em;
   -webkit-margin-after: 0em;
           margin-block-end: 0em;
+  letter-spacing: 0.01rem;
 }
 
 .icons {
