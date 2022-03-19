@@ -95,9 +95,10 @@ header {
     font-weight: 100;
     font-size: clamp(1rem, 1.5vw, 1.5rem);
     font-family: 'Montserrat', sans-serif;
-    margin: 0 auto 5%;
+    margin: 0 0 2.5%;
     text-align: left;
     line-height: 1.7;
+    width: 60%;
     }
     button {
     background: linear-gradient(to right, #e61a5f, #ca247c);
@@ -410,6 +411,7 @@ footer {
     min-height: 70vh;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
     align-items: center;
     div {
       width: 50%;
@@ -420,7 +422,7 @@ footer {
       }
     }
     lottie-player {
-      zoom: 250%;
+      zoom: 350%;
     }
   }
   .about {

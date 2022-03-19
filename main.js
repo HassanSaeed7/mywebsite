@@ -59,7 +59,7 @@ window.addEventListener('scroll', () => {
 			item.classList.add('active');
 		};
 	});
-})
+});
     
 //toggles the hamburger menu when you click it
 hamburgerBtn.addEventListener('click', () => {
