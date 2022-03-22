@@ -364,6 +364,10 @@ footer h2 {
   padding: 1.5rem 0;
   font-size: 1.5rem;
 }
+.mobile-nav img {
+  width: 25%;
+  margin: 0 auto;
+}
 
 .mobile-nav.is-active {
   left: 0;
