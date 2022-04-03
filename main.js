@@ -51,6 +51,7 @@ window.addEventListener('scroll', () => {
             current = section.getAttribute('id');
         }
     });
+    
     const navLi = document.querySelectorAll('.navLinks');
     navLi.forEach(item => {
 		item.classList.remove('active');

@@ -24,7 +24,12 @@ li {
   list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   -webkit-margin-before: 0em;
           margin-block-start: 0em;
   -webkit-margin-after: 0em;
@@ -46,7 +51,7 @@ img {
 
 .scroll-up header {
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-  background: white;
+  background: rgb(255, 255, 255);
 }
 
 .scroll-down header {
@@ -87,14 +92,17 @@ header {
 }
 
 .hero {
+  min-height: 60vh;
   color: white;
-  background: #3397FD;
-  background: -moz-linear-gradient(top, #3397FD, #84BEF2);
-  background-image: linear-gradient(to bottom, #3397FD, #84BEF2);
+  background: #3397fd;
+  background: -moz-linear-gradient(top, #3397fd, #84bef2);
+  background-image: linear-gradient(to bottom, #3397fd, #84bef2);
   text-align: left;
 }
 .hero h1 {
-  font-size: clamp(1.5rem, 4.5vw, 7rem);
+  font-size: clamp(1.5rem, 4vw, 6rem);
+  margin-top: 1%;
+  white-space: nowrap;
 }
 .hero div {
   width: 80%;
@@ -104,10 +112,10 @@ header {
   font-weight: 100;
   font-size: clamp(1rem, 1.5vw, 1.5rem);
   font-family: "Montserrat", sans-serif;
-  margin: 0 0 2.5%;
+  margin: 2.5% 0 2.5%;
   text-align: left;
   line-height: 1.7;
-  width: 60%;
+  width: 50%;
 }
 .hero div button {
   background: linear-gradient(to right, #e61a5f, #ca247c);
@@ -220,8 +228,8 @@ header {
 
 footer {
   color: white;
-  background: #3397FD;
-  background: linear-gradient(to bottom, #3397FD, #84BEF2);
+  background: #3397fd;
+  background: linear-gradient(to bottom, #3397fd, #84bef2);
 }
 footer h2 {
   margin-left: 2.5%;
@@ -289,7 +297,7 @@ footer h2 {
 }
 
 .fa-wordpress {
-  color: #00749C;
+  color: #00749c;
 }
 
 .icon-hover {
@@ -300,7 +308,8 @@ footer h2 {
   margin: 0 auto;
 }
 
-.show, .show-footer {
+.show,
+.show-footer {
   display: none;
 }
 
@@ -373,6 +382,23 @@ footer h2 {
   left: 0;
 }
 
+.nav-logo {
+  display: none;
+}
+
+.mobile-logo {
+  display: flex;
+  margin-left: 5%;
+}
+.mobile-logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-logo img {
+  height: 5vh;
+}
+
 @media screen and (min-width: 768px) {
   header {
     position: fixed;
@@ -381,17 +407,26 @@ footer h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 5vh;
+    height: 7.5vh;
   }
   header nav {
     font-size: 1.5rem;
-    width: 50%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    gap: 2rem;
+    margin-right: 5%;
   }
-  header .nav-logo {
-    margin-left: 1%;
+
+  .hire {
+    background: linear-gradient(to right, #e61a5f, #ca247c);
+    color: white;
+    width: 180px;
+    height: 4vh;
+    display: grid;
+    place-content: center;
+    transition: background 0.5s ease;
+    font-weight: bold;
   }
 
   .active {
@@ -421,22 +456,21 @@ footer h2 {
   }
 
   .hero {
-    min-height: 70vh;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
   .hero div {
-    width: 50%;
+    width: 100%;
     margin-left: 2.5%;
   }
   .hero div h2 {
-    width: 60%;
     margin: 0;
+    width: 100%;
   }
   .hero lottie-player {
-    zoom: 350%;
+    zoom: 200%;
   }
 
   .about {
@@ -479,7 +513,8 @@ footer h2 {
     display: flex;
   }
 
-  .project-tile, .inner-tile {
+  .project-tile,
+.inner-tile {
     min-height: 90vh;
   }
 
@@ -545,7 +580,11 @@ footer h2 {
        object-fit: cover;
   }
 
-  .icon-hover a span, .icon-hover a p {
+  .icon-hover {
+    transition: 0.25s ease;
+  }
+  .icon-hover a span,
+.icon-hover a p {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -581,15 +620,40 @@ footer h2 {
   .contact-list ul {
     width: 70%;
   }
-}
-@media (min-width: 768px) {
-  .hamburger, .mobile-nav {
+
+  .hamburger,
+.mobile-nav {
     display: none;
   }
 }
 @media screen and (min-width: 1150px) {
   header .nav-logo {
-    margin-left: 5%;
+    margin-left: 2.5%;
+    display: block;
+    font-weight: 900;
+    font-size: 2rem;
+  }
+
+  .mobile-logo {
+    display: none;
+  }
+
+  .hero {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hero div {
+    width: 30%;
+    margin-left: 2.5%;
+  }
+  .hero div h2 {
+    margin: 0;
+  }
+  .hero lottie-player {
+    zoom: 350%;
   }
 
   .gallery {
@@ -602,13 +666,8 @@ footer h2 {
   }
 }
 @media (hover) {
-  .hire {
-    background: linear-gradient(to right, #e61a5f, #ca247c);
-    color: white;
-    width: 120px;
-    height: 4vh;
-    display: grid;
-    place-content: center;
+  .hire:hover {
+    background: linear-gradient(to right, red, red);
   }
 
   .gallery-img:hover {
@@ -624,6 +683,6 @@ footer h2 {
   }
 
   .icon-hover:hover {
-    color: white;
+    color: rgb(255, 255, 255);
   }
 }/*# sourceMappingURL=style.css.map */
