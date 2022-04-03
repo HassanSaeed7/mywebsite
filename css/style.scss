@@ -83,7 +83,7 @@ header {
 }
 //front page
 .hero {
-  min-height: 60vh;
+  min-height: 100vh;
   color: white;
   background: #3397fd;
   background: -webkit-linear-gradient(top, #3397fd, #84bef2);
@@ -438,7 +438,7 @@ footer {
   .hero {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    
     align-items: center;
     div {
       width: 100%;

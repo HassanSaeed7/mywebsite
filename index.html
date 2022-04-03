@@ -2,15 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-    <meta name="description" content="Hassan Saeed is a web developer and this is his portfolio site created with HTML, CSS, and JavaScript."/>
-    <link rel="icon" type="image/png" href="/fav.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700;900&family=Poppins:wght@100;200;300;600;700&display=swap" rel="stylesheet">
-    <script defer src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script defer src="https://kit.fontawesome.com/defadb8f1e.js" crossorigin="anonymous"></script>
-    <script defer src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hassan Saeed is a web developer and this is his portfolio site created with HTML, CSS, and JavaScript."
+    />
+    <link rel="icon" type="image/png" href="/fav.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700;900&family=Poppins:wght@100;200;300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
+    ></script>
+    <script
+      defer
+      src="https://kit.fontawesome.com/defadb8f1e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://code.iconify.design/2/2.1.2/iconify.min.js"
+    ></script>
     <script defer type="module" src="/main.js"></script>
     <title>Hassan Saeed - Web Developer</title>
   </head>
@@ -18,326 +34,558 @@
   <body data-scroll-container>
     <header>
       <div class="nav-logo"><a href="/">Hassan Saeed</a></div>
-      <div class="mobile-logo"><a href="/"><img data-src="/favi.png" alt="My logo" ></a></div>
-      
+      <div class="mobile-logo">
+        <a href="/"><img data-src="/favi.png" alt="My logo" /></a>
+      </div>
+
       <nav>
         <a class="active navLinks" href="#hero">Home</a>
         <a class="navLinks" href="#about">About</a>
         <a class="navLinks" href="#project">Projects</a>
         <a class="navLinks" href="#gallery">Designs</a>
-        <a class="navLinks" href="#contact"> <div class="hire">Contact</div> </a>
+        <a class="navLinks" href="#contact">
+          <div class="hire">Contact</div>
+        </a>
       </nav>
-      
-      
     </header>
     <div class="mobile-header">
-    <button id="hamburger" class="hamburger">
-      <div class="bar"></div>
-    </button>
-       <nav id="mobile-nav" class="mobile-nav">
-      <img data-src="/favi.png" alt="My logo" >
-      <a href="#hero" class="hamburger-navlinks">Home</a>
-      <a href="#about" class="hamburger-navlinks">About</a>
-      <a href="#project" class="hamburger-navlinks">Projects</a>
-      <a href="#gallery" class="hamburger-navlinks">Design Mockups</a>
-      <a href="#contact" class="hamburger-navlinks hire" >Hire Me</a>
-      
-    </nav>
+      <button id="hamburger" class="hamburger">
+        <div class="bar"></div>
+      </button>
+      <nav id="mobile-nav" class="mobile-nav">
+        <img data-src="/favi.png" alt="My logo" />
+        <a href="#hero" class="hamburger-navlinks">Home</a>
+        <a href="#about" class="hamburger-navlinks">About</a>
+        <a href="#project" class="hamburger-navlinks">Projects</a>
+        <a href="#gallery" class="hamburger-navlinks">Design Mockups</a>
+        <a href="#contact" class="hamburger-navlinks hire">Contact</a>
+      </nav>
     </div>
-    
 
     <main>
-    <div class="hero container" id="hero" data-scroll-section>
-      
-      <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_ruzoywer.json" class="player" background="transparent"  speed="1"  style="width: 350px; height: 300px;" loop autoplay></lottie-player> 
-      
-      <div>
-          <h1>Hello! I am<br>Hassan Saeed.</h1>
-          
-          <h2>I have a passion for web development and can help make your digital dreams a reality.</h2>
-          <button class="CTA" onClick="document.getElementById('project').scrollIntoView();">View Projects</button>
-        </div>  
-        
-    </div>
-  <div class="show" >
+      <div class="hero container" id="hero" data-scroll-section>
+        <lottie-player
+          src="https://assets2.lottiefiles.com/packages/lf20_ruzoywer.json"
+          class="player"
+          background="transparent"
+          speed="1"
+          style="width: 350px; height: 300px"
+          loop
+          autoplay
+        ></lottie-player>
+
+        <div>
+          <h1>Hello! I am<br />Hassan Saeed.</h1>
+
+          <h2>
+            I have a passion for web development and can help make your digital
+            dreams a reality.
+          </h2>
+          <button
+            class="CTA"
+            onClick="document.getElementById('project').scrollIntoView();"
+          >
+            View Projects
+          </button>
+        </div>
+      </div>
+      <div class="show">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path fill="#84BEF2" fill-opacity="1" d="M0,128L48,117.3C96,107,192,85,288,90.7C384,96,480,128,576,154.7C672,181,768,203,864,192C960,181,1056,139,1152,122.7C1248,107,1344,117,1392,122.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+          <path
+            fill="#84BEF2"
+            fill-opacity="1"
+            d="M0,128L48,117.3C96,107,192,85,288,90.7C384,96,480,128,576,154.7C672,181,768,203,864,192C960,181,1056,139,1152,122.7C1248,107,1344,117,1392,122.7L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+          ></path>
         </svg>
+      </div>
 
-    </div>
+      <div class="about container" id="about" data-scroll-section>
+        <h2 class="section-title">About</h2>
 
-        
-     
+        <div class="about-inner">
+          <article>
+            <p class="about-subheaders">I am a developer.</p>
+            <p class="about-text">
+              With a niche in frontend, I develop modern web pages and
+              applications with HTML, CSS, and JavaScript. I use frameworks and
+              build tools such as React, NextJS, and Vite to streamline the
+              development process.
+            </p>
+            <div></div>
 
+            <p class="about-subheaders">I am a designer.</p>
+            <p class="about-text">
+              I love to brainstorm, prototype, and design user interfaces that
+              are not only visually attractive but also deliver the best user
+              experiences. From Photoshop to Figma/XD to HTML/CSS, you can
+              expect meticulous, pixel-perfect conversions on every project.
+            </p>
 
+            <p class="about-subheaders">I am a wordpress developer.</p>
+            <p class="about-text">
+              Wordpress sites can be a great option for small businesses or
+              independent creators who are looking to garner a virtual presence.
+              Contact me to get a Wordpress site setup today!
+            </p>
+          </article>
 
-<div class="about container" id="about" data-scroll-section>
-      
-      <h2 class="section-title">About</h2>
-
-      <div class="about-inner">
-
-        <article>
-          <p class="about-subheaders">I am a developer.</p>
-          <p class="about-text">With a niche in frontend, I develop modern web pages and applications with HTML, CSS, and JavaScript. I use frameworks and build tools such as React, NextJS, and Vite to streamline the development process.</p>
-          <div>
-            
+          <div class="icons">
+            <span
+              class="iconify"
+              data-icon="bxl:html5"
+              style="color: #f06529"
+              data-width="100"
+              data-height="100"
+            ></span>
+            <span
+              class="iconify"
+              data-icon="bxl:css3"
+              style="color: #2965f1"
+              data-width="100"
+              data-height="100"
+            ></span>
+            <span
+              class="iconify"
+              data-icon="logos:javascript"
+              style="color: #f06529"
+              data-width="80"
+              data-height="80"
+            ></span>
+            <span
+              class="iconify"
+              data-icon="logos:typescript-icon"
+              data-width="80"
+            ></span>
+            <span
+              class="iconify"
+              data-icon="logos:react"
+              data-width="80"
+              data-height="80"
+            ></span>
+            <span
+              class="iconify"
+              data-icon="cib:next-js"
+              data-width="80"
+            ></span>
+            <span
+              class="iconify"
+              data-icon="bi:git"
+              style="color: #f34f29"
+              data-width="80"
+              data-height="80"
+            ></span>
+            <span
+              class="iconify"
+              data-icon="logos:nodejs"
+              style="color: #00749c"
+              data-width="80"
+              data-height="80"
+            ></span>
+            <span
+              class="iconify"
+              data-icon="logos:express"
+              data-width="80"
+              data-height="80"
+            ></span>
+            <span
+              class="iconify"
+              data-icon="logos:mongodb"
+              data-width="100"
+              data-height="100"
+            ></span>
+            <span
+              class="iconify"
+              data-icon="vscode-icons:file-type-vite"
+              data-width="80"
+              data-height="80"
+            ></span>
+            <span
+              class="iconify"
+              data-icon="logos:sass"
+              data-width="80"
+              data-height="80"
+            ></span>
+            <span
+              class="iconify bs"
+              data-icon="akar-icons:bootstrap-fill"
+              style="color: #602c50"
+              data-width="80"
+              data-height="80"
+            ></span>
+            <img class="sc-icon" src="/sc.svg" alt="styled components icon" />
+            <span
+              class="iconify"
+              data-icon="logos:figma"
+              data-width="60"
+              data-height="80"
+            ></span>
+            <span
+              class="iconify"
+              data-icon="brandico:wordpress"
+              style="color: #00749c"
+              data-width="80"
+              data-height="80"
+            ></span>
           </div>
-
-          <p class="about-subheaders">I am a designer.</p> 
-          <p class="about-text">I love to brainstorm, prototype, and design user interfaces that are not only visually attractive but also deliver the best user experiences. From Photoshop to Figma/XD to HTML/CSS, you can expect meticulous, pixel-perfect conversions on every project.</p>
-          
-          <p class="about-subheaders">I am a wordpress developer.</p>
-          <p class="about-text">Wordpress sites can be a great option for small businesses or independent creators who are looking to garner a virtual presence. Contact me to get a Wordpress site setup today!</p>
-       
-        </article>
-        
-
-      <div class='icons'>
-          <span class="iconify" data-icon="bxl:html5" style="color: #f06529;" data-width="100" data-height="100"></span>
-          <span class="iconify" data-icon="bxl:css3" style="color: #2965f1;" data-width="100" data-height="100"></span>
-          <span class="iconify" data-icon="logos:javascript" style="color: #f06529;" data-width="80" data-height="80"></span>
-          <span class="iconify" data-icon="logos:typescript-icon" data-width="80"></span>
-          <span class="iconify" data-icon="logos:react" data-width="80" data-height="80"></span>
-          <span class="iconify" data-icon="cib:next-js" data-width="80"></span>
-          <span class="iconify" data-icon="bi:git" style="color: #f34f29;" data-width="80" data-height="80"></span>
-          <span class="iconify" data-icon="logos:nodejs" style="color: #00749c;" data-width="80" data-height="80"></span>
-          <span class="iconify" data-icon="logos:express" data-width="80" data-height="80"></span>
-          <span class="iconify" data-icon="logos:mongodb" data-width="100" data-height="100"></span>
-          <span class="iconify" data-icon="vscode-icons:file-type-vite"  data-width="80" data-height="80"></span>
-          <span class="iconify" data-icon="logos:sass" data-width="80" data-height="80"></span>
-          <span class="iconify bs" data-icon="akar-icons:bootstrap-fill" style="color: #602C50" data-width="80" data-height="80"></span>
-          <img class='sc-icon' src="/sc.svg" alt="styled components icon">
-          <span class="iconify" data-icon="logos:figma" data-width="60" data-height="80"></span>
-          <span class="iconify" data-icon="brandico:wordpress" style="color: #00749c;" data-width="80" data-height="80"></span>
+        </div>
       </div>
 
-    </div>
-</div>
-    
-    
+      <div class="project container" id="project" data-scroll-section>
+        <h2 class="section-title">Projects</h2>
 
-<div class="project container" id="project" data-scroll-section>
+        <div class="project-tile">
+          <h3>Film Forager</h3>
+          <div class="inner-tile">
+            <img data-src="/ff.webp" alt="project image for film forager" />
+            <div class="tile-info">
+              <p>
+                A film app that contains many features! From popular and
+                trending films to a popular star, you can search for movie
+                details afar! The web app was created with React and the data is
+                provided by the Movie Database API.
+              </p>
+              <a href="https://film-forager.vercel.app/" target="_blank"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+        </div>
 
-      <h2 class="section-title">Projects</h2>
+        <div class="project-tile">
+          <h3>This or That? Game</h3>
+          <div class="inner-tile">
+            <img data-src="/totfig.webp" alt="project image for this or that" />
+            <div class="tile-info">
+              <p>
+                This or That is a simple A or B selection game in which players
+                get to choose between two thematically-related alternatives. I
+                wanted to turn a popular movie list into an interactive
+                experience and this is the result. Check it out, maybe you'll
+                find a cool movie to watch this weekend!
+              </p>
+              <a href="https://hassansaeed7.github.io/OldNew/" target="_blank"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+        </div>
 
-      <div class="project-tile">
-        <h3>Film Forager</h3>
-        <div class="inner-tile">
-        <img data-src="/ff.webp" alt="project image for film forager">
-        <div class="tile-info">
-        <p>A film app that contains many features! From popular and trending films to a popular star, you can search for movie details afar! The web app was created with React and the data is provided by the Movie Database API.</p>
-        <a href="https://film-forager.vercel.app/" target="_blank">Live Demo</a>
+        <div class="project-tile">
+          <h3>Styled Landing Page</h3>
+          <div class="inner-tile">
+            <img data-src="/23.png" alt="project image for the landing page" />
+            <div class="tile-info">
+              <p>
+                A catalog page with scroll-jacked animations using Locomotive
+                Scroll, GSAP, and intersection Observer.
+              </p>
+              <a href="https://style-orcin.vercel.app/" target="_blank"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-tile">
+          <h3>E-Commerce Store</h3>
+          <div class="inner-tile">
+            <img
+              data-src="/ecom.webp"
+              alt="project image for e-commerce store"
+            />
+            <div class="tile-info">
+              <p>
+                A functional e-commerce shop experience for a gym equipment
+                company. This web app is created with React for the frontend,
+                Node/Express for the server, and MongoDB for the database.
+              </p>
+              <a href="#contact">Contact For Access</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-tile">
+          <h3>Lorem Games</h3>
+          <div class="inner-tile">
+            <img
+              data-src="/loremgames.png"
+              alt="project image for the list extension"
+            />
+            <div class="tile-info">
+              <p>
+                A proof-of-concept for a gaming company landing page using plain
+                HTML and CSS.
+              </p>
+              <a
+                href="https://hassansaeed7.github.io/LoremGames/"
+                target="_blank"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project-tile">
+          <h3>Wake</h3>
+          <div class="inner-tile">
+            <img data-src="/WAKE2.webp" alt="project image for the band page" />
+            <div class="tile-info">
+              <p>
+                A webpage for my friends' really cool band. I used the Swiper.JS
+                library for the slider functionality. Check out their music if
+                you have the time. They are great!
+              </p>
+              <a href="https://bandpage.vercel.app/" target="_blank"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project-tile">
+          <h3>Link Keeper</h3>
+          <div class="inner-tile">
+            <img
+              data-src="/linkeeper.webp"
+              alt="project image for the list extension"
+            />
+            <div class="tile-info">
+              <p>
+                A simple Chrome extension built with vanilla JavaScript. The
+                extension utilizes local storage to save and set the inputted
+                link or the link in the window's current tab. There is also an
+                option to download the list as a .csv file.
+              </p>
+              <a
+                href="https://chrome.google.com/webstore/detail/link-keeper/ecdjgiphacbpbioajcpfigapegiapchk?hl=en&authuser=0"
+                target="_blank"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-tile">
+          <h3>Landing Page</h3>
+          <div class="inner-tile">
+            <img data-src="/25.png" alt="project image for the landing page" />
+            <div class="tile-info">
+              <p>A landing page animation using JQuery.</p>
+              <a href="https://furniture-sigma.vercel.app/" target="_blank"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-tile">
+          <h3>Landing Page</h3>
+          <div class="inner-tile">
+            <img data-src="/24.png" alt="project image for the landing page" />
+            <div class="tile-info">
+              <p>
+                A landing page animation using GreenSock Animation Platform.
+              </p>
+              <a
+                href="https://hassansaeed7.github.io/LoremOutdoors/"
+                target="_blank"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-tile">
+          <h3>Landing Page</h3>
+          <div class="inner-tile">
+            <img data-src="/lp.webp" alt="project image for the landing page" />
+            <div class="tile-info">
+              <p>
+                An elegant landing page for a business that was designed with
+                SEO, accessibility, and performance in mind. The landing page
+                was built with HTML, CSS (SASS), and JavaScript. Intersection
+                observer is used for the scroll triggered animations.
+              </p>
+              <a
+                href="https://hassansaeed7.github.io/hdnclanding/"
+                target="_blank"
+                >Live Demo</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
-      </div>
-      </div>
 
-      <div class="project-tile">
-        <h3>This or That? Game</h3>
-        <div class="inner-tile">
-        <img data-src="/totfig.webp" alt="project image for this or that">
-        <div class="tile-info">
-        <p>This or That is a simple A or B selection game in which players get to choose between two thematically-related alternatives. I wanted to turn a popular movie list into an interactive experience and this is the result. Check it out, maybe you'll find a cool movie to watch this weekend!</p>
-        <a href="https://hassansaeed7.github.io/OldNew/" target="_blank">Live Demo</a>
+      <div class="container" id="gallery" data-scroll-section>
+        <h2 class="section-title">Design Mockups</h2>
+        <div class="gallery">
+          <img
+            alt="mockup design of a website"
+            class="gallery-img"
+            data-src="/g10.webp"
+          />
+          <img
+            alt="mockup design of a website"
+            class="gallery-img"
+            data-src="/8.webp"
+          />
+          <img
+            alt="mockup design of a website"
+            class="gallery-img"
+            data-src="/5.webp"
+          />
+          <img
+            alt="mockup design of a website"
+            class="gallery-img"
+            data-src="/4.webp"
+          />
+          <img
+            alt="mockup design of a website"
+            class="gallery-img"
+            data-src="/15.webp"
+          />
+          <img
+            alt="mockup design of a website"
+            class="gallery-img"
+            data-src="/3.webp"
+          />
+          <img
+            alt="mockup design of a website"
+            class="gallery-img"
+            data-src="/g8.webp"
+          />
+          <img
+            alt="mockup design of a website"
+            class="gallery-img"
+            data-src="/7.webp"
+          />
+          <img
+            alt="mockup design of a website"
+            class="gallery-img"
+            data-src="/g6.webp"
+          />
+          <img
+            alt="mockup design of a website"
+            class="gallery-img"
+            data-src="/9.webp"
+          />
+          <img
+            alt="mockup design of a website"
+            class="gallery-img"
+            data-src="/12.webp"
+          />
+          <img
+            alt="mockup design of a website"
+            class="gallery-img"
+            data-src="/18.webp"
+          />
+          <img
+            alt="mockup design of a website"
+            class="gallery-img"
+            data-src="/2.webp"
+          />
+          <img
+            alt="mockup design of a website"
+            class="gallery-img"
+            data-src="/19.webp"
+          />
+        </div>
       </div>
-      </div>
-    </div>
-
-    <div class="project-tile">
-      <h3>Styled Landing Page</h3>
-      <div class="inner-tile">
-        <img data-src="/23.png" alt="project image for the landing page">
-        <div class="tile-info">
-        <p>A catalog page with scroll-jacked animations using Locomotive Scroll, GSAP, and intersection Observer.</p>
-        <a href="https://style-orcin.vercel.app/" target="_blank">Live Demo</a>
-      </div>
-      </div>
-    </div>
-
-      <div class="project-tile">
-        <h3>E-Commerce Store</h3>
-        <div class="inner-tile">
-        <img  data-src="/ecom.webp" alt="project image for e-commerce store">
-        <div class="tile-info">
-        <p>A functional e-commerce shop experience for a gym equipment company. This web app is created with React for the frontend, Node/Express for the server, and MongoDB for the database.</p>
-        <a href="#contact">Contact For Access</a>
-      </div>
-      </div>
-    </div>
-
-
-
-<div class="project-tile">
-      <h3>Lorem Games</h3>
-      <div class="inner-tile">
-      <img data-src="/loremgames.png" alt="project image for the list extension">
-      <div class="tile-info">
-      <p>A proof-of-concept for a gaming company landing page using plain HTML and CSS.</p>
-      <a href="https://hassansaeed7.github.io/LoremGames/" target="_blank">Live Demo</a>
-    </div>
-</div>
-</div>
-      <div class="project-tile">
-        <h3>Wake</h3>
-        <div class="inner-tile">
-        <img  data-src="/WAKE2.webp" alt="project image for the band page">
-        <div class="tile-info">
-        <p>A webpage for my friends' really cool band. I used the Swiper.JS library for the slider functionality. Check out their music if you have the time. They are great!</p>
-        <a href="https://bandpage.vercel.app/" target="_blank">Live Demo</a>
-      </div>
-      </div>
-</div>
-      <div class="project-tile">
-        <h3>Link Keeper</h3>
-        <div class="inner-tile">
-        <img data-src="/linkeeper.webp" alt="project image for the list extension">
-        <div class="tile-info">
-        <p>A simple Chrome extension built with vanilla JavaScript. The extension utilizes local storage to save and set the inputted link or the link in the window's current tab. There is also an option to download the list as a .csv file.</p>
-        <a href="https://chrome.google.com/webstore/detail/link-keeper/ecdjgiphacbpbioajcpfigapegiapchk?hl=en&authuser=0" target="_blank">Live Demo</a>
-      </div>
-</div>
-</div>
-
-<div class="project-tile">
-  <h3>Landing Page</h3>
-  <div class="inner-tile">
-    <img data-src="/25.png" alt="project image for the landing page">
-    <div class="tile-info">
-    <p>A landing page animation using JQuery.</p>
-    <a href="https://furniture-sigma.vercel.app/" target="_blank">Live Demo</a>
-  </div>
-  </div>
-</div>
-
-<div class="project-tile">
-  <h3>Landing Page</h3>
-  <div class="inner-tile">
-    <img data-src="/24.png" alt="project image for the landing page">
-    <div class="tile-info">
-    <p>A landing page animation using GreenSock Animation Platform.</p>
-    <a href="https://hassansaeed7.github.io/LoremOutdoors/" target="_blank">Live Demo</a>
-  </div>
-  </div>
-</div>
-      
-<div class="project-tile">
-  <h3>Landing Page</h3>
-  <div class="inner-tile">
-    <img data-src="/lp.webp" alt="project image for the landing page">
-    <div class="tile-info">
-    <p>An elegant landing page for a business that was designed with SEO, accessibility, and performance in mind. The landing page was built with HTML, CSS (SASS), and JavaScript. Intersection observer is used for the scroll triggered animations.</p>
-    <a href="https://hassansaeed7.github.io/hdnclanding/" target="_blank">Live Demo</a>
-  </div>
-  </div>
-</div>
-
-    </div>
-
-<div class='container' id="gallery" data-scroll-section>
-    <h2 class="section-title">Design Mockups</h2> 
-    <div class="gallery" >
-       
-      <img alt="mockup design of a website" class="gallery-img" data-src="/g10.webp">
-      <img alt="mockup design of a website" class="gallery-img" data-src="/8.webp">
-      <img alt="mockup design of a website" class="gallery-img" data-src="/5.webp">
-      <img alt="mockup design of a website" class="gallery-img" data-src="/4.webp">
-      <img alt="mockup design of a website" class="gallery-img" data-src="/15.webp"> 
-      <img alt="mockup design of a website" class="gallery-img" data-src="/3.webp">
-      <img alt="mockup design of a website" class="gallery-img" data-src="/g8.webp">
-      <img alt="mockup design of a website" class="gallery-img" data-src="/7.webp">
-      <img alt="mockup design of a website" class="gallery-img" data-src="/g6.webp">
-      <img alt="mockup design of a website" class="gallery-img" data-src="/9.webp">
-      <img alt="mockup design of a website" class="gallery-img" data-src="/12.webp">
-      <img alt="mockup design of a website" class="gallery-img" data-src="/18.webp">
-      <img alt="mockup design of a website" class="gallery-img" data-src="/2.webp">
-      <img alt="mockup design of a website" class="gallery-img" data-src="/19.webp">
- 
- 
-    </div>
-</div>
-
     </main>
-<div class="show-footer">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path fill="#3397FD" fill-opacity="1" d="M0,192L60,202.7C120,213,240,235,360,256C480,277,600,299,720,272C840,245,960,171,1080,154.7C1200,139,1320,181,1380,202.7L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-  </svg>
-</div>
-  <footer class="contact container" data-scroll-section>
-
-
-
-
+    <div class="show-footer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#3397FD"
+          fill-opacity="1"
+          d="M0,192L60,202.7C120,213,240,235,360,256C480,277,600,299,720,272C840,245,960,171,1080,154.7C1200,139,1320,181,1380,202.7L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
+    </div>
+    <footer class="contact container" data-scroll-section>
       <div>
-    <h2>Get in Touch!</h2>
+        <h2>Get in Touch!</h2>
       </div>
       <div class="contact-right">
-    <div class="contact-list">
-      
-      <ul>
+        <div class="contact-list">
+          <ul>
+            <li class="icon-hover">
+              <a
+                class="contactbtn email"
+                href="https://www.linkedin.com/in/hassansaeed7"
+                target="_blank"
+              >
+                <span
+                  class="iconify"
+                  data-icon="bi:linkedin"
+                  data-width="80"
+                ></span>
+                <p>LinkedIn</p>
+              </a>
+            </li>
 
-        <li class="icon-hover">
-          <a
-            class="contactbtn email"
-            href="https://www.linkedin.com/in/hassansaeed7"
-            target="_blank"
-            >
-            <span class="iconify" data-icon="bi:linkedin"  data-width="80"></span>
-            <p>LinkedIn</p>
-          </a>
-        </li>
+            <li class="icon-hover">
+              <a
+                class="contactbtn email"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=hsaeed1007@gmail.com"
+                target="_blank"
+              >
+                <span
+                  class="iconify"
+                  data-icon="entypo:email"
+                  data-width="80"
+                ></span>
+                <p>Email</p>
+              </a>
+            </li>
 
-        <li class="icon-hover">
-          <a
-            class="contactbtn email"
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=hsaeed1007@gmail.com"
-            target="_blank"
-            >
-            <span class="iconify" data-icon="entypo:email" data-width="80" ></span>
-            <p>Email</p>
-          </a>
-        </li>
-        
-        <li class="icon-hover">
-          <a
-            class="contactbtn github"
-            href="https://github.com/HassanSaeed7"
-            target="_blank"
-            >
-            <span class="iconify" data-icon="bi:git" data-width="80" ></span>
-            <p>Github</p>
-          </a>
-        </li>
+            <li class="icon-hover">
+              <a
+                class="contactbtn github"
+                href="https://github.com/HassanSaeed7"
+                target="_blank"
+              >
+                <span class="iconify" data-icon="bi:git" data-width="80"></span>
+                <p>Github</p>
+              </a>
+            </li>
 
-        <li class="icon-hover">
-          <a class="contactbtn resume" 
-          href="https://docs.google.com/document/d/1DGwrpk_lMUfRYnHCe2rmKpvjFep4eYHlCyjxl_cf99A/edit?usp=sharing" 
-          target="_blank"
+            <li class="icon-hover">
+              <a
+                class="contactbtn resume"
+                href="https://docs.google.com/document/d/1DGwrpk_lMUfRYnHCe2rmKpvjFep4eYHlCyjxl_cf99A/edit?usp=sharing"
+                target="_blank"
+              >
+                <span
+                  class="iconify"
+                  data-icon="akar-icons:file"
+                  data-width="80"
+                ></span>
+                <p>Resume</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-form" id="contact">
+          <form
+            method="POST"
+            action="https://formsubmit.co/4ebd58c48837178b4aae2bb81f444ee6"
           >
-        <span class="iconify" data-icon="akar-icons:file" data-width="80" ></span>
-        <p>Resume</p>
-        </a>
-        </li>
-        
-      </ul>
+            <input type="hidden" name="_next" value="https://hassansaeed.me" />
+            <label for="name">Name</label>
+            <input type="input" id="name" name="name" required />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+            <label for="message">Message</label>
+            <textarea
+              rows="7"
+              cols="50"
+              name="message"
+              id="message"
+              required
+            ></textarea>
+            <input type="submit" />
+          </form>
+        </div>
       </div>
-
-      <div class="contact-form" id="contact">
-      
-      <form method="POST" action="https://formsubmit.co/4ebd58c48837178b4aae2bb81f444ee6">
-        <input type="hidden" name="_next" value="https://hassansaeed.me">
-        <label for="name">Name</label>
-        <input type="input" id="name" name="name" required>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-        <label for="message">Message</label>
-        <textarea rows="7" cols="50" name="message" id="message" required></textarea> 
-        <input type="submit">
-      </form>
-    </div>
-  </div>
-  </footer>
-
-
-    
+    </footer>
   </body>
 </html>
