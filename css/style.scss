@@ -212,6 +212,7 @@ header {
 }
 .gallery-img {
   width: 100%;
+  min-height: 100%;
   margin: 5% auto;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   transition: all 0.45s ease-in-out;
@@ -274,7 +275,7 @@ footer {
       font-size: 1.2rem;
       padding: 1.5%;
     }
-    input:last-child {
+    #submit {
       border: none;
       line-height: 2;
       font-size: clamp(1.2rem, 1.5vw, 2rem);
@@ -535,6 +536,7 @@ footer {
     }
   }
   .gallery {
+    margin-top: 2.5%;
     width: 95%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -577,7 +579,7 @@ footer {
     width: 50%;
   }
   .contact-form {
-    input:last-child {
+    #submit {
       width: fit-content;
     }
   }

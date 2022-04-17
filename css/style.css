@@ -221,6 +221,7 @@ header {
 
 .gallery-img {
   width: 100%;
+  min-height: 100%;
   margin: 5% auto;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   transition: all 0.45s ease-in-out;
@@ -284,7 +285,7 @@ footer h2 {
   font-size: 1.2rem;
   padding: 1.5%;
 }
-.contact-form form input:last-child {
+.contact-form form #submit {
   border: none;
   line-height: 2;
   font-size: clamp(1.2rem, 1.5vw, 2rem);
@@ -563,6 +564,7 @@ footer h2 {
   }
 
   .gallery {
+    margin-top: 2.5%;
     width: 95%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -610,7 +612,7 @@ footer h2 {
     width: 50%;
   }
 
-  .contact-form input:last-child {
+  .contact-form #submit {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
