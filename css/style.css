@@ -214,6 +214,10 @@ header {
   font-weight: 700;
 }
 
+.mockup {
+  padding: 10vh 0;
+}
+
 .gallery {
   width: 90%;
   margin: 0 2.5%;
@@ -221,7 +225,6 @@ header {
 
 .gallery-img {
   width: 100%;
-  min-height: 100%;
   margin: 5% auto;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
   transition: all 0.45s ease-in-out;
