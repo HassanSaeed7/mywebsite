@@ -97,15 +97,19 @@ header {
   background: #3397fd;
   background: -moz-linear-gradient(top, #3397fd, #84bef2);
   background-image: linear-gradient(to bottom, #3397fd, #84bef2);
-  text-align: left;
+  text-align: center;
 }
 .hero h1 {
-  font-size: clamp(1.5rem, 4vw, 6rem);
+  font-size: clamp(1.5rem, 6vw, 6rem);
   margin-top: 1%;
   white-space: nowrap;
 }
 .hero div {
   width: 80%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   margin: 0 auto;
 }
 .hero div h2 {
@@ -115,7 +119,6 @@ header {
   margin: 2.5% 0 2.5%;
   text-align: left;
   line-height: 1.7;
-  width: 50%;
 }
 .hero div button {
   background: linear-gradient(to right, #e61a5f, #ca247c);
@@ -175,7 +178,7 @@ header {
 
 .project-tile {
   width: 70%;
-  min-height: 90vh;
+  min-height: 100vh;
   margin: 5% auto;
 }
 .project-tile h3 {
@@ -467,6 +470,8 @@ footer h2 {
   .hero div {
     width: 100%;
     margin-left: 2.5%;
+    text-align: left;
+    display: block;
   }
   .hero div h2 {
     margin: 0;
