@@ -128,6 +128,7 @@ header {
   font-size: 1.25rem;
   font-weight: bold;
   margin-top: 5%;
+  border-radius: 10px;
 }
 
 .about {
@@ -178,7 +179,6 @@ header {
 
 .project-tile {
   width: 70%;
-  min-height: 100vh;
   margin: 5% auto;
 }
 .project-tile h3 {
@@ -249,6 +249,7 @@ footer h2 {
 }
 .contact h2 {
   font-size: clamp(3rem, 4vw, 5rem);
+  height: auto;
 }
 
 .contact-list ul {
@@ -290,6 +291,7 @@ footer h2 {
   margin: 1.5% 0;
   font-size: 1.2rem;
   padding: 1.5%;
+  border-radius: 10px;
 }
 .contact-form form #submit {
   border: none;
@@ -301,6 +303,7 @@ footer h2 {
   background: linear-gradient(to right, #e61a5f, #ca247c);
   color: white;
   font-weight: bold;
+  border-radius: 10px;
 }
 
 .fa-wordpress {
@@ -406,6 +409,52 @@ footer h2 {
   height: 5vh;
 }
 
+.section-title {
+  position: relative;
+  height: 100%;
+}
+
+.section-title::before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 100px;
+  background: linear-gradient(to right, #e61a5f, #ca247c);
+  bottom: 0;
+}
+
+.divider {
+  display: flex;
+  position: relative;
+  margin-top: 90px;
+  height: 1px;
+}
+
+.div-transparent:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  width: 90%;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, rgb(48, 49, 51), transparent);
+}
+
+.div-dot:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -9px;
+  left: calc(50% - 9px);
+  width: 18px;
+  height: 18px;
+  background: linear-gradient(to right, #e61a5f, #ca247c);
+  border: 1px solid rgb(48, 49, 51);
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 2px white, 0 0 0 4px white;
+}
+
 @media screen and (min-width: 768px) {
   header {
     position: fixed;
@@ -434,6 +483,7 @@ footer h2 {
     place-content: center;
     transition: background 0.5s ease;
     font-weight: bold;
+    border-radius: 10px;
   }
 
   .active {
@@ -446,20 +496,6 @@ footer h2 {
 
   .container.hero {
     margin-bottom: 0;
-  }
-
-  .section-title {
-    position: relative;
-    height: 100%;
-  }
-
-  .section-title::before {
-    position: absolute;
-    content: "";
-    height: 10px;
-    width: 100px;
-    background: linear-gradient(to right, #e61a5f, #ca247c);
-    bottom: 0;
   }
 
   .hero {
@@ -523,7 +559,7 @@ footer h2 {
 
   .project-tile,
 .inner-tile {
-    min-height: 90vh;
+    min-height: 80vh;
   }
 
   .project-tile {

@@ -119,6 +119,7 @@ header {
       font-size: 1.25rem;
       font-weight: bold;
       margin-top: 5%;
+      border-radius: 10px;
     }
   }
 }
@@ -172,7 +173,6 @@ header {
 //projects page
 .project-tile {
   width: 70%;
-  min-height: 100vh;
   margin: 5% auto;
   h3 {
     font-size: clamp(2rem, 3vw, 3rem);
@@ -241,6 +241,7 @@ footer {
   justify-content: space-evenly;
   h2 {
     font-size: clamp(3rem, 4vw, 5rem);
+    height: auto;
   }
 }
 .contact-list {
@@ -280,6 +281,7 @@ footer {
       margin: 1.5% 0;
       font-size: 1.2rem;
       padding: 1.5%;
+      border-radius: 10px;
     }
     #submit {
       border: none;
@@ -291,6 +293,7 @@ footer {
       background: linear-gradient(to right, #e61a5f, #ca247c);
       color: white;
       font-weight: bold;
+      border-radius: 10px;
     }
   }
 }
@@ -337,7 +340,7 @@ footer {
   margin: 6px 0;
   transition: 0.4s;
 }
-
+//responsive nav
 .hamburger.is-active::before {
   transform: rotate(-45deg) translate(-10px, 10px);
 }
@@ -392,6 +395,56 @@ footer {
   }
 }
 
+//section title underline style
+.section-title {
+  position: relative;
+  height: 100%;
+}
+.section-title::before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 100px;
+  background: linear-gradient(to right, #e61a5f, #ca247c);
+  bottom: 0;
+}
+
+.divider
+{
+  display: flex;
+	position: relative;
+	margin-top: 90px;
+	height: 1px;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+
+.div-dot:after
+{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: -9px;
+	left: calc(50% - 9px);
+	width: 18px;
+	height: 18px;
+	background: linear-gradient(to right, #e61a5f, #ca247c);
+	border: 1px solid rgb(48,49,51);
+	border-radius: 50%;
+	box-shadow: inset 0 0 0 2px white,
+					0 0 0 4px white;
+}
+
 //##########################large screens############################
 @media screen and (min-width: 768px) {
   header {
@@ -420,6 +473,7 @@ footer {
     place-content: center;
     transition: background 0.5s ease;
     font-weight: bold;
+    border-radius: 10px;
   }
   .active {
     border-bottom: 5px solid red;
@@ -430,18 +484,7 @@ footer {
   .container.hero {
     margin-bottom: 0;
   }
-  .section-title {
-    position: relative;
-    height: 100%;
-  }
-  .section-title::before {
-    position: absolute;
-    content: "";
-    height: 10px;
-    width: 100px;
-    background: linear-gradient(to right, #e61a5f, #ca247c);
-    bottom: 0;
-  }
+
   .hero {
     display: flex;
     flex-direction: column;
@@ -499,7 +542,7 @@ footer {
   }
   .project-tile,
   .inner-tile {
-    min-height: 90vh;
+    min-height: 80vh;
   }
   .project-tile {
     margin-bottom: 7.5%;
