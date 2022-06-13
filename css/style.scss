@@ -643,6 +643,10 @@ footer {
   .mobile-nav {
     display: none;
   }
+  .div-dot:after
+  { 
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1150px) {
@@ -677,6 +681,7 @@ footer {
   .gallery {
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   }
+
 }
 
 @media screen and (min-width: 1650px) {

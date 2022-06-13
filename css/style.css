@@ -670,6 +670,10 @@ footer h2 {
 .mobile-nav {
     display: none;
   }
+
+  .div-dot:after {
+    display: none;
+  }
 }
 @media screen and (min-width: 1150px) {
   header .nav-logo {
